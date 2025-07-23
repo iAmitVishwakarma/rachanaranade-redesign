@@ -1,0 +1,652 @@
+{
+  "instructors": [
+    {
+      "id": "INST001",
+      "name": "CA Rachana Ranade",
+      "credentials": "Chartered Accountant, Educator",
+      "profile_image": "/images/instructors/rachana-ranade.jpg",
+      "bio": "A Chartered Accountant by profession and a teacher by passion, Rachana Ranade has been on a mission to make financial education accessible to everyone in the simplest language possible.",
+      "social_links": {
+        "youtube": "http://googleusercontent.com/youtube.com/3",
+        "linkedin": "https://linkedin.com/in/carachanaranade",
+        "twitter": "https://twitter.com/rachanaranade"
+      }
+    },
+    {
+      "id": "INST002",
+      "name": "Amit Sharma",
+      "credentials": "SEBI Registered Investment Advisor",
+      "profile_image": "/images/instructors/amit-sharma.jpg",
+      "bio": "Amit is a seasoned market expert with over 15 years of experience in technical analysis and derivatives trading. He specializes in creating actionable trading strategies.",
+      "social_links": {
+        "twitter": "https://twitter.com/amitsharmafinance"
+      }
+    }
+  ],
+  "courses": [
+    {
+      "id": "CRS001",
+      "slug": "basics-of-stock-market",
+      "title": "Basics of Stock Market",
+      "price": 5499,
+      "original_price": 7999,
+      "instructor_id": "INST001",
+      "category": "Beginner",
+      "platform": "Android & iOS",
+      "duration_in_hours": 15,
+      "enrollment_count": 45876,
+      "rating": 4.8,
+      "rating_count": 945,
+      "image": "/images/courses/basics-of-stock-market.jpg",
+      "what_you_will_learn": [
+        "Understand how the stock market works.",
+        "Learn key terminologies like Sensex, Nifty, Bull, and Bear.",
+        "How to open a Demat & Trading account.",
+        "Place your first buy and sell orders with confidence."
+      ],
+      "last_updated": "2025-07-20T18:00:00Z"
+    },
+    {
+      "id": "CRS002",
+      "slug": "mastering-money-management",
+      "title": "Mastering Money Management",
+      "price": 2299,
+      "original_price": 2499,
+      "instructor_id": "INST001",
+      "category": "Beginner",
+      "platform": "All Platforms",
+      "duration_in_hours": 8,
+      "enrollment_count": 18432,
+      "rating": 4.9,
+      "rating_count": 412,
+      "image": "/images/courses/mastering-money-management.jpg",
+      "what_you_will_learn": [
+        "Create a personal budget that works.",
+        "Implement powerful savings and debt-reduction strategies.",
+        "Understand your financial health and set achievable goals."
+      ],
+      "last_updated": "2025-07-10T09:00:00Z"
+    },
+    {
+      "id": "CRS003",
+      "slug": "magic-of-mutual-funds",
+      "title": "Magic of Mutual Funds",
+      "price": 4799,
+      "original_price": 5299,
+      "instructor_id": "INST001",
+      "category": "Beginner",
+      "platform": "Android & iOS",
+      "duration_in_hours": 10,
+      "enrollment_count": 21543,
+      "rating": 4.8,
+      "rating_count": 342,
+      "image": "/images/courses/magic-of-mutual-funds.jpg",
+      "what_you_will_learn": [
+        "Understand the fundamentals of mutual funds.",
+        "Learn to select the right fund for your goals.",
+        "Master the art of building a diversified portfolio."
+      ],
+      "last_updated": "2025-07-15T12:00:00Z"
+    },
+    {
+      "id": "CRS004",
+      "slug": "fundamental-analysis",
+      "title": "Fundamental Analysis",
+      "price": 9999,
+      "original_price": 14999,
+      "instructor_id": "INST001",
+      "category": "Intermediate",
+      "platform": "Windows PC & MacOS",
+      "duration_in_hours": 20,
+      "enrollment_count": 15234,
+      "rating": 5.0,
+      "rating_count": 510,
+      "image": "/images/courses/fundamental-analysis.jpg",
+      "what_you_will_learn": [
+        "Read financial statements like a professional.",
+        "Calculate and interpret key financial ratios.",
+        "Perform industry and economic analysis.",
+        "Value a company to find its intrinsic worth."
+      ],
+      "last_updated": "2025-06-25T10:00:00Z"
+    },
+    {
+      "id": "CRS005",
+      "slug": "technical-analysis",
+      "title": "Technical Analysis",
+      "price": 8999,
+      "original_price": 13499,
+      "instructor_id": "INST002",
+      "category": "Intermediate",
+      "platform": "All Platforms",
+      "duration_in_hours": 18,
+      "enrollment_count": 17890,
+      "rating": 4.9,
+      "rating_count": 480,
+      "image": "/images/courses/technical-analysis.jpg",
+      "what_you_will_learn": [
+        "Master candlestick patterns and chart reading.",
+        "Use technical indicators like RSI, MACD, and Moving Averages.",
+        "Identify trends, support, and resistance levels.",
+        "Develop your own trading strategies."
+      ],
+      "last_updated": "2025-07-01T11:00:00Z"
+    },
+    {
+      "id": "CRS006",
+      "slug": "futures-and-options",
+      "title": "Futures and Options",
+      "price": 14999,
+      "original_price": 25000,
+      "instructor_id": "INST002",
+      "category": "Advanced",
+      "platform": "Android & iOS",
+      "duration_in_hours": 25,
+      "enrollment_count": 9876,
+      "rating": 5.0,
+      "rating_count": 350,
+      "image": "/images/courses/fno.jpg",
+      "what_you_will_learn": [
+        "Understand the mechanics of derivatives.",
+        "Learn key option greeks (Delta, Gamma, Theta, Vega).",
+        "Implement various options strategies like straddles and spreads.",
+        "Manage risk in F&O trading."
+      ],
+      "last_updated": "2025-05-30T15:00:00Z"
+    },
+    {
+      "id": "CRS007",
+      "slug": "art-of-value-investing",
+      "title": "Art of Value Investing",
+      "price": 4299,
+      "original_price": 9999,
+      "instructor_id": "INST001",
+      "category": "Advanced",
+      "platform": "Windows PC & MacOS",
+      "duration_in_hours": 12,
+      "enrollment_count": 11234,
+      "rating": 5.0,
+      "rating_count": 420,
+      "image": "/images/courses/value-investing.jpg",
+      "what_you_will_learn": [
+        "Learn the principles of legendary investors.",
+        "Identify undervalued stocks with strong fundamentals.",
+        "Build a long-term portfolio based on value.",
+        "Understand the concept of 'Margin of Safety'."
+      ],
+      "last_updated": "2025-06-10T14:00:00Z"
+    },
+    {
+      "id": "CRS008",
+      "slug": "pro-investor-marathi",
+      "title": "Pro Investor Membership (Marathi)",
+      "price": 4000,
+      "original_price": 4500,
+      "instructor_id": "INST001",
+      "category": "Regional",
+      "platform": "All Platforms",
+      "duration_in_hours": 20,
+      "enrollment_count": 5678,
+      "rating": 5.0,
+      "rating_count": 150,
+      "image": "/images/courses/pro-investor-marathi.jpg",
+      "what_you_will_learn": [
+        "Deep dive into stock market analysis in Marathi.",
+        "Weekly market analysis sessions.",
+        "Exclusive access to a Marathi-speaking community."
+      ],
+      "last_updated": "2025-07-18T10:00:00Z"
+    },
+    {
+      "id": "CRS009",
+      "slug": "beginner-combo-pack",
+      "title": "Beginner's Combo Pack",
+      "price": 11599,
+      "original_price": 15797,
+      "instructor_id": "INST001",
+      "category": "Bundles",
+      "platform": "Android & iOS",
+      "is_bundle": true,
+      "bundle_count": 3,
+      "courses_included": ["CRS001", "CRS002", "CRS003"],
+      "image": "/images/courses/bundle-beginner.jpg",
+      "what_you_will_learn": [
+        "A complete foundation in personal finance, mutual funds, and the stock market."
+      ],
+      "last_updated": "2025-07-21T10:00:00Z"
+    },
+    {
+      "id": "CRS010",
+      "slug": "analysis-pro-pack",
+      "title": "Analysis Pro Pack",
+      "price": 18499,
+      "original_price": 28499,
+      "instructor_id": "INST001",
+      "category": "Bundles",
+      "platform": "All Platforms",
+      "is_bundle": true,
+      "bundle_count": 2,
+      "courses_included": ["CRS004", "CRS005"],
+      "image": "/images/courses/bundle-analysis.jpg",
+      "what_you_will_learn": [
+        "Master both fundamental and technical analysis to become a well-rounded investor."
+      ],
+      "last_updated": "2025-07-21T10:00:00Z"
+    }
+  ],
+  "blogs": [
+    {
+      "id": "BLG001",
+      "slug": "unlocking-reversals-inverse-head-shoulders",
+      "title": "Unlocking Reversals: The Inverse Head and Shoulders Pattern",
+      "date": "2025-07-15T00:00:00Z",
+      "author_id": "INST002",
+      "excerpt": "Learn how to spot one of the most reliable bullish reversal patterns in technical analysis and how to trade it effectively.",
+      "image": "/images/blogs/inverse-head-shoulders.jpg",
+      "tags": ["Technical Analysis", "Chart Patterns", "Trading"],
+      "reading_time_in_minutes": 5,
+      "is_featured": true,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "The inverse head and shoulders pattern..."
+        },
+        { "type": "heading", "text": "How to Identify the Pattern" },
+        { "type": "list", "items": ["Left Shoulder", "Head", "Right Shoulder"] }
+      ]
+    },
+    {
+      "id": "BLG002",
+      "slug": "the-psychology-of-investing",
+      "title": "The Psychology of Investing: Avoiding Emotional Mistakes",
+      "date": "2025-07-18T00:00:00Z",
+      "author_id": "INST001",
+      "excerpt": "Your biggest enemy in the stock market is often yourself. Learn how to control fear and greed to make rational investment decisions.",
+      "image": "/images/blogs/investing-psychology.jpg",
+      "tags": ["Investing", "Behavioral Finance"],
+      "reading_time_in_minutes": 7,
+      "is_featured": false,
+      "content": [
+        { "type": "paragraph", "text": "Fear and greed are powerful forces..." }
+      ]
+    },
+    {
+      "id": "BLG003",
+      "slug": "sip-vs-lumpsum",
+      "title": "SIP vs. Lumpsum: Which is Right for You?",
+      "date": "2025-07-10T11:30:00Z",
+      "author_id": "INST001",
+      "excerpt": "We break down the pros and cons of Systematic Investment Plans (SIPs) versus lumpsum investments to help you decide.",
+      "image": "/images/blogs/sip-vs-lumpsum.jpg",
+      "tags": ["Investing", "Mutual Funds", "Beginner"],
+      "reading_time_in_minutes": 6,
+      "is_featured": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Both SIP and Lumpsum are popular ways..."
+        }
+      ]
+    },
+    {
+      "id": "BLG004",
+      "slug": "building-emergency-fund",
+      "title": "Building Your Emergency Fund: The First Step to Financial Freedom",
+      "date": "2025-06-25T14:00:00Z",
+      "author_id": "INST001",
+      "excerpt": "An emergency fund is your financial safety net. Learn how much you need, where to keep it, and why it's non-negotiable.",
+      "image": "/images/blogs/emergency-fund.jpg",
+      "tags": ["Personal Finance", "Financial Planning"],
+      "reading_time_in_minutes": 5,
+      "is_featured": false,
+      "content": [{ "type": "paragraph", "text": "Life is unpredictable..." }]
+    },
+    {
+      "id": "BLG005",
+      "slug": "how-to-read-annual-report",
+      "title": "How to Read an Annual Report Like a Pro",
+      "date": "2025-07-02T09:00:00Z",
+      "author_id": "INST001",
+      "excerpt": "An annual report is a goldmine of information if you know where to look. Learn how to analyze them to make better investment choices.",
+      "image": "/images/blogs/annual-report.jpg",
+      "tags": ["Stock Market", "Fundamental Analysis"],
+      "reading_time_in_minutes": 8,
+      "is_featured": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "An annual report is the most comprehensive document..."
+        }
+      ]
+    },
+    {
+      "id": "BLG006",
+      "slug": "understanding-debt-funds",
+      "title": "A Beginner's Guide to Understanding Debt Funds",
+      "date": "2025-06-15T10:00:00Z",
+      "author_id": "INST001",
+      "excerpt": "Debt funds are a safer investment alternative to equities. Understand how they work and if they are a right fit for your portfolio.",
+      "image": "/images/blogs/debt-funds.jpg",
+      "tags": ["Mutual Funds", "Investing", "Beginner"],
+      "reading_time_in_minutes": 6,
+      "is_featured": false,
+      "content": [
+        { "type": "paragraph", "text": "When we talk about mutual funds..." }
+      ]
+    },
+    {
+      "id": "BLG007",
+      "slug": "understanding-price-action",
+      "title": "Decoding Price Action Analysis",
+      "date": "2025-06-05T12:00:00Z",
+      "author_id": "INST002",
+      "excerpt": "Price action trading involves making all of your trading decisions from a stripped down or 'naked' price chart.",
+      "image": "/images/blogs/price-action.jpg",
+      "tags": ["Technical Analysis", "Advanced", "Trading"],
+      "reading_time_in_minutes": 9,
+      "is_featured": false,
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Price action is the purest form of technical analysis..."
+        }
+      ]
+    }
+  ],
+  "testimonials": [
+    {
+      "id": "TST001",
+      "name": "Aarav Sharma",
+      "course_id": "CRS003",
+      "quote": "Rachana ma'am simplifies the most complex topics. I finally feel confident about my investments. The live Q&A sessions are a game-changer!",
+      "profile_image": "/images/avatars/aarav.jpg",
+      "rating": 5,
+      "is_verified": true
+    },
+    {
+      "id": "TST002",
+      "name": "Priya Singh",
+      "course_id": "CRS001",
+      "quote": "The community support is amazing. Being able to ask questions and learn with others has been a game-changer for me. Best decision I ever made!",
+      "profile_image": "/images/avatars/priya.jpg",
+      "rating": 5,
+      "is_verified": true
+    },
+    {
+      "id": "TST003",
+      "name": "Rohan Mehta",
+      "course_id": "CRS005",
+      "quote": "I thought I knew enough about finance, but the membership content opened my eyes to so much more. The downloadable notes are pure gold. Worth every penny!",
+      "profile_image": "/images/avatars/rohan.jpg",
+      "rating": 5,
+      "is_verified": true
+    },
+    {
+      "id": "TST004",
+      "name": "Sneha Gupta",
+      "course_id": "CRS002",
+      "quote": "As a working professional, the flexible learning schedule is perfect. I can learn anytime, anywhere. The content is practical and easy to apply.",
+      "profile_image": "/images/avatars/sneha.jpg",
+      "rating": 4,
+      "is_verified": true
+    },
+    {
+      "id": "TST005",
+      "name": "Vikram Rathod",
+      "course_id": "CRS006",
+      "quote": "The Futures and Options course is intense but incredibly rewarding. The strategies taught are practical and have improved my trading results.",
+      "profile_image": "/images/avatars/vikram.jpg",
+      "rating": 5,
+      "is_verified": true
+    }
+  ],
+  "membership_plans": [
+    {
+      "id": "plan-monthly",
+      "name": "Monthly",
+      "price": 999,
+      "period": "month",
+      "tagline": "Perfect for getting started.",
+      "features": [
+        "Access to all courses",
+        "Community support",
+        "Email support"
+      ],
+      "popular": false
+    },
+    {
+      "id": "plan-yearly",
+      "name": "Yearly",
+      "price": 9999,
+      "period": "year",
+      "tagline": "Best value for dedicated learners.",
+      "features": [
+        "Access to all courses",
+        "Community support",
+        "Live monthly webinars",
+        "Downloadable notes",
+        "Priority support"
+      ],
+      "popular": true
+    },
+    {
+      "id": "plan-lifetime",
+      "name": "Lifetime",
+      "price": 24999,
+      "period": "one-time",
+      "tagline": "Pay once, learn forever.",
+      "features": [
+        "All Yearly plan benefits",
+        "Lifetime access & updates",
+        "Exclusive workshops"
+      ],
+      "popular": false
+    }
+  ],
+  "faqs": [
+    {
+      "id": "FAQ001",
+      "question": "Can I cancel my subscription anytime?",
+      "answer": "Yes, you can cancel your monthly or yearly subscription at any time from your account dashboard. You will retain access until the end of your current billing period.",
+      "category": "Subscription"
+    },
+    {
+      "id": "FAQ002",
+      "question": "Are the courses live or pre-recorded?",
+      "answer": "All our courses are pre-recorded with high-quality videos, allowing you to learn at your own pace. However, we conduct exclusive live Q&A webinars for our Yearly and Lifetime members.",
+      "category": "Courses"
+    },
+    {
+      "id": "FAQ003",
+      "question": "What happens after I purchase a plan?",
+      "answer": "You will get instant access to all the membership benefits corresponding to your plan. You can start learning immediately through your personal dashboard.",
+      "category": "Payment"
+    },
+    {
+      "id": "FAQ004",
+      "question": "Do you offer refunds?",
+      "answer": "Yes, we offer a 7-day no-questions-asked refund policy. If you are not satisfied with the course for any reason, you can request a full refund within 7 days of your purchase.",
+      "category": "Support"
+    },
+    {
+      "id": "FAQ005",
+      "question": "Will I get a certificate after completing a course?",
+      "answer": "Yes, upon successful completion of any course, you will receive a downloadable certificate of completion that you can share on your professional networks like LinkedIn.",
+      "category": "Courses"
+    },
+    {
+      "id": "FAQ006",
+      "question": "Are there any prerequisites for the beginner courses?",
+      "answer": "No, our beginner courses are designed for absolute beginners. All you need is a willingness to learn. We start from the very basics and build up from there.",
+      "category": "Courses"
+    },
+    {
+      "id": "FAQ007",
+      "question": "How long do I have access to the courses?",
+      "answer": "Once you purchase a course or a membership plan, you have lifetime access to the content, including all future updates and additions to those courses.",
+      "category": "Subscription"
+    },
+    {
+      "id": "FAQ008",
+      "question": "Can I watch the courses on my mobile device?",
+      "answer": "Absolutely! Our platform is fully responsive, and courses are accessible on a wide range of devices, including Android phones, iPhones, Windows PCs, and MacOS laptops.",
+      "category": "Technical"
+    },
+    {
+      "id": "FAQ009",
+      "question": "How is the community support provided?",
+      "answer": "Our community support is provided through a private, dedicated chat group where you can interact with fellow students, ask questions, and participate in discussions moderated by our team.",
+      "category": "Support"
+    },
+    {
+      "id": "FAQ010",
+      "question": "What payment methods do you accept?",
+      "answer": "We accept all major payment methods, including credit cards, debit cards, UPI, and popular digital wallets.",
+      "category": "Payment"
+    }
+  ],
+  "calculators": [
+    {
+      "id": "CAL001",
+      "name": "SIP Calculator",
+      "description": "Calculate the future value of your monthly SIP investments."
+    },
+    {
+      "id": "CAL002",
+      "name": "Lumpsum Calculator",
+      "description": "Calculate the future value of a one-time investment."
+    },
+    {
+      "id": "CAL003",
+      "name": "Goal SIP Calculator",
+      "description": "Find out how much you need to invest to reach your financial goals."
+    },
+    {
+      "id": "CAL004",
+      "name": "Retirement Planner",
+      "description": "Plan and calculate the corpus you need for a comfortable retirement."
+    },
+    {
+      "id": "CAL005",
+      "name": "EMI Calculator",
+      "description": "Compute your monthly EMI for loans."
+    },
+    {
+      "id": "CAL006",
+      "name": "CAGR Calculator",
+      "description": "Calculate the Compounded Annual Growth Rate of your investments."
+    },
+    {
+      "id": "CAL007",
+      "name": "Car Loan Calculator",
+      "description": "Calculate your EMI and affordability for your dream car."
+    },
+    {
+      "id": "CAL008",
+      "name": "Position Sizing Calculator",
+      "description": "Calculate how many shares to buy based on your risk and capital."
+    }
+  ],
+  "featured_in": [
+    {
+      "id": "FT001",
+      "publication": "Vogue",
+      "title": "5 female-led Instagram accounts that are empowering women with financial literacy",
+      "date": "2021-08-11T00:00:00Z",
+      "url": "https://www.vogue.com/article/empowering-women-finance",
+      "image": "/images/featured/vogue.jpg"
+    },
+    {
+      "id": "FT002",
+      "publication": "CNBC TV18",
+      "title": "Investing in mutual funds: How to assess & avoid portfolio overlap",
+      "date": "2021-09-09T00:00:00Z",
+      "url": "https://www.cnbctv18.com/mutual-funds-investing-guide",
+      "image": "/images/featured/cnbc.jpg"
+    },
+    {
+      "id": "FT003",
+      "publication": "Business Insider",
+      "title": "Rachana Ranade Talks about the 50:30:20 rule – Master Your Money",
+      "date": "2021-03-10T00:00:00Z",
+      "url": "https://www.businessinsider.in/money-mastery-guide",
+      "image": "/images/featured/business-insider.jpg"
+    },
+    {
+      "id": "FT004",
+      "publication": "YouTube Official Blog",
+      "title": "How 5 women are using their channels to empower and inspire",
+      "date": "2022-03-24T00:00:00Z",
+      "url": "http://googleusercontent.com/youtube.com/4",
+      "image": "/images/featured/youtube.jpg"
+    },
+    {
+      "id": "FT005",
+      "publication": "Moneycontrol",
+      "title": "Rachana Ranade on the art of making smart financial decisions",
+      "date": "2021-01-02T00:00:00Z",
+      "url": "https://www.moneycontrol.com/smart-finance-guide",
+      "image": "/images/featured/moneycontrol.jpg"
+    },
+    {
+      "id": "FT006",
+      "publication": "The Economic Times",
+      "title": "Meet Rachana Ranade, The YouTuber who has built a fortune by decoding stock-market jargon",
+      "date": "2021-02-16T00:00:00Z",
+      "url": "https://economictimes.indiatimes.com/rachana-ranade-profile",
+      "image": "/images/featured/economic-times.jpg"
+    },
+    {
+      "id": "FT007",
+      "publication": "Business Today",
+      "title": "Rise of The Influencers",
+      "date": "2021-08-06T00:00:00Z",
+      "url": "https://www.businesstoday.in/rise-of-influencers",
+      "image": "/images/featured/business-today.jpg"
+    },
+    {
+      "id": "FT008",
+      "publication": "Mint",
+      "title": "Meet India's new breed of money influencers",
+      "date": "2021-07-08T00:00:00Z",
+      "url": "https://www.livemint.com/money-influencers",
+      "image": "/images/featured/mint.jpg"
+    },
+    {
+      "id": "FT009",
+      "publication": "The Indian Express",
+      "title": "IT geeks may exit country if cryptos are banned, says ‘Finfluencer’ Rachana Ranade",
+      "date": "2021-11-30T00:00:00Z",
+      "url": "https://indianexpress.com/crypto-ban-rachana-ranade",
+      "image": "/images/featured/indian-express.jpg"
+    },
+    {
+      "id": "FT010",
+      "publication": "CRED",
+      "title": "The ABCs of Equity Investing",
+      "date": "2021-11-17T00:00:00Z",
+      "url": "https://www.cred.club/equity-investing-guide",
+      "image": "/images/featured/cred.jpg"
+    }
+  ],
+  "legal_pages": [
+    {
+      "id": "terms",
+      "slug": "terms-of-use",
+      "title": "Terms of Use",
+      "content": "Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use..."
+    },
+    {
+      "id": "privacy",
+      "slug": "privacy-policy",
+      "title": "Privacy Policy",
+      "content": "This privacy policy sets out how we use and protect any information that you give us when you use this website. We are committed to ensuring that your privacy is protected..."
+    },
+    {
+      "id": "refund",
+      "slug": "refund-policy",
+      "title": "Refund Policy",
+      "content": "Thanks for purchasing our products. We offer a full money-back guarantee for all purchases made on our website. If you are not satisfied with the product that you have purchased from us, you can get your money back no questions asked..."
+    }
+  ]
+}
