@@ -3,45 +3,38 @@ import { useParams, Navigate } from 'react-router-dom';
 import useCourseStore from '../stores/courseStore';
 import useInstructorStore from '../stores/instructorStore';
 import useTestimonialStore from '../stores/testimonialStore';
-
-// Import the new, smaller components
 import CourseHero from '../components/course/CourseHero';
 import CourseSidebar from '../components/course/CourseSidebar';
 import WhatYouWillLearn from '../components/course/WhatYouWillLearn';
 import CourseReviews from '../components/course/CourseReviews';
 import CourseContent from '../components/course/CourseContent';
+import FeaturedCourses from '../components/FeaturedCourses'; // For related courses
 
 const CourseDetailPage = () => {
-    const { slug } = useParams(); // Use slug from the URL
-
-    // Fetch all necessary data from Zustand stores
+    const { slug } = useParams();
     const { courses } = useCourseStore();
     const { instructors } = useInstructorStore();
     const { testimonials } = useTestimonialStore();
 
-    // Find the specific course, its instructor, and related testimonials
     const course = courses.find(c => c.slug === slug);
-    const instructor = course ? instructors.find(i => i.id === course.instructor_id) : null;
-    const courseTestimonials = course ? testimonials.filter(t => t.course_id === course.id) : [];
-
-    // If the course is not found, redirect to the main courses page
+    
     if (!course) {
         return <Navigate to="/courses" replace />;
     }
 
+    const instructor = instructors.find(i => i.id === course.instructor_id);
+    const courseTestimonials = testimonials.filter(t => t.course_id === course.id);
+
     return (
         <div className="bg-background">
-            {/* 1. Hero Section */}
             <CourseHero course={course} instructor={instructor} />
 
-            {/* 2. Main Layout (Content + Sticky Sidebar) */}
-            <div className="container mx-auto px-4 py-12">
+            <div className="container mx-auto px-4 py-12 sm:py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-                    
-                    {/* Left Side: Course Content Details */}
+                    {/* Left Side: Course Details */}
                     <div className="lg:col-span-2 space-y-12">
                         <WhatYouWillLearn points={course.what_you_will_learn} />
-                        <CourseContent />
+                        <CourseContent modules={course.content} />
                         <CourseReviews testimonials={courseTestimonials} />
                     </div>
 
@@ -49,8 +42,12 @@ const CourseDetailPage = () => {
                     <aside className="lg:col-span-1">
                         <CourseSidebar course={course} />
                     </aside>
-
                 </div>
+            </div>
+            
+            {/* Related Courses Section */}
+            <div className="bg-white py-4">
+                 <FeaturedCourses />
             </div>
         </div>
     );

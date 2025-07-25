@@ -2,7 +2,7 @@ import { Instagram, Linkedin, Locate, Mail, MapPinHouse, Phone, Youtube } from "
 import React from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import logo from "../assets/logo.png";
+import logo from "/Images/logo.png";
 import {
   faFacebookF,
   faTwitter,

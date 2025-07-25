@@ -1,127 +1,142 @@
-// import { Link } from 'react-router-dom';
-// import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { LogOut, Menu, X } from 'lucide-react';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
-// const Navbar = () => {
-//   return (
-//     <nav className="bg-white shadow-md sticky top-0 z-50">
-//       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-//         <Link to="/" className="flex items-center">
-//           <motion.div
-//             initial={{ scale: 0 }}
-//             animate={{ scale: 1 }}
-//             transition={{ duration: 0.5 }}
-//             className="text-2xl font-bold text-primary"
-//           >
-//             CA Rachana Ranade
-//           </motion.div>
-//         </Link>
-        
-//         <div className="hidden md:flex space-x-8">
-//           <Link to="/" className="text-gray-700 hover:text-primary transition">Home</Link>
-//           <Link to="/courses" className="text-gray-700 hover:text-primary transition">Courses</Link>
-//           <Link to="/about" className="text-gray-700 hover:text-primary transition">About</Link>
-//           <Link to="/auth" className="bg-primary text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition">
-//             Login
-//           </Link>
-//         </div>
-        
-//         {/* Mobile menu button */}
-//         <button className="md:hidden text-gray-700">
-//           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-//             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path>
-//           </svg>
-//         </button>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
-import React, { useState } from 'react';
-// import { Link } from 'react-router-dom';
-import { Menu, X } from 'lucide-react';
-import { Link, NavLink } from 'react-router-dom';
-
-const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const navItems = [
-    {label: 'Home', path: '/' },
-      { label: ' Courses', path: '/courses' },
+const navItems = [
+    { label: 'Home', path: '/' },
+    { label: 'Courses', path: '/courses' },
     { label: 'Calculators', path: '/financial-calculators' },
     { label: 'Blog', path: '/blog' },
     { label: 'Membership', path: '/membership' },
-     { label: 'About', path: '/about' }, 
-  ];
+    { label: 'About', path: '/about' },
+];
 
-  return (
-    <header className="sticky top-0 z-50 backdrop-blur-2xl bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-1 py-5 flex justify-between items-center">
-        {/* Logo */}
-        <Link to="/" className="text-2xl font-bold text-teal-600">
-          Rachana<span className="text-orange-500">.</span>
-        </Link>
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+        const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const navigate = useNavigate();
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-6 items-center">
-          {navItems.map((item) => (
-            <NavLink
-              key={item.label}
-              to={item.path}
-              className={({ isActive }) => (isActive ? "border-b-2 border-teal-600 rounded  " : `px-1 text-base text-gray-700 hover:text-teal-600 transition`) }
-            >
-              {item.label}
-            </NavLink>
-          ))}
-          {/* <button className="text-sm text-gray-600 hover:text-blue-600 transition">
-            हिंदी
-          </button> */}
-          <Link
-            to="/login"
-            className="ml-4 bg-teal-600 hover:bg-teal-700 text-white px-4 py-1.5 rounded-full text-sm font-medium shadow"
-          >
-            Login
-          </Link>
-        </nav>
+       useEffect(() => {
+        const loggedInStatus = localStorage.getItem('rr_is_logged_in');
+        if (loggedInStatus === 'true') {
+            setIsLoggedIn(true);
+        }
+    }, []);
 
-        {/* Mobile Menu Toggle */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-gray-700 focus:outline-none"
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
+    const handleLogout = () => {
+        // Clear authentication data from localStorage
+        localStorage.removeItem('rr_is_logged_in');
+        localStorage.removeItem('rr_user_auth');
+        setIsLoggedIn(false);
+        // Navigate to home page after logout
+        navigate('/');
+    };
 
-      {/* Mobile Nav */}
-      {isOpen && (
-        <div className="md:hidden bg-white shadow-md border-t border-gray-200">
-          <div className="flex flex-col px-4 py-2 space-y-2">
-            {navItems.map((item) => (
-              <Link
-                key={item.label}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className="text-sm text-gray-700 hover:text-teal-600 transition"
-              >
-                {item.label}
-              </Link>
-            ))}
-            <button className="text-sm text-gray-600 text-left">हिंदी</button>
-            <Link
-              to="/login"
-              className="mt-2 bg-teal-600 hover:bg-teal-700 text-white px-4 py-1.5 rounded-full text-sm font-medium"
-            >
-              Login
-            </Link>
-          </div>
-        </div>
-      )}
-    </header>
-  );
+
+    const mobileMenuVariants = {
+        hidden: {
+            opacity: 0,
+            y: -20,
+            transition: { duration: 0.2, ease: "easeOut" }
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: 0.2, ease: "easeIn" }
+        }
+    };
+
+    return (
+        <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-lg shadow-sm">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="flex justify-between items-center h-20">
+                    {/* Logo */}
+                    <Link to="/" className="text-2xl font-bold text-teal-600">
+                        Rachana<span className="text-orange-500">.</span>
+                    </Link>
+
+                    {/* Desktop Nav */}
+                    <nav className="hidden md:flex gap-6 items-center">
+                        {navItems.map((item) => (
+                            <NavLink
+                                key={item.label}
+                                to={item.path}
+                                className={({ isActive }) =>
+                                    `relative text-base font-medium text-gray-700 hover:text-primary transition-colors after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[2px] after:w-full after:bg-primary after:scale-x-0 after:origin-left after:transition-transform ${
+                                    isActive ? 'text-primary after:scale-x-100' : 'after:hover:scale-x-100'
+                                    }`
+                                }
+                            > 
+                                {item.label}
+                            </NavLink>
+                        ))}
+                          {isLoggedIn ? (
+                            <button onClick={handleLogout} className="ml-4 flex items-center gap-2 bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-full text-sm font-medium shadow-md transition-all">
+                                <LogOut size={16} />
+                                <span>Logout</span>
+                            </button>
+                        ) : (
+                            <Link to="/login" className="ml-4 bg-primary hover:opacity-90 text-white px-5 py-2 rounded-full text-sm font-medium shadow-md transition-all">
+                                Login
+                            </Link>
+                        )}
+                    </nav>
+
+                    {/* Mobile Menu Toggle */}
+                    <div className="md:hidden">
+                        <button
+                            onClick={() => setIsOpen(!isOpen)}
+                            className="text-gray-700 focus:outline-none"
+                            aria-controls="mobile-menu"
+                            aria-expanded={isOpen}
+                        >
+                            <span className="sr-only">Open main menu</span>
+                            {isOpen ? <X size={28} /> : <Menu size={28} />}
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            {/* Mobile Nav */}
+            <AnimatePresence>
+                {isOpen && (
+                    <motion.div
+                        id="mobile-menu"
+                        className="md:hidden bg-white shadow-lg border-t border-gray-100"
+                        initial="hidden"
+                        animate="visible"
+                        exit="hidden"
+                        variants={mobileMenuVariants}
+                    >
+                        <div className="flex flex-col px-4 pt-2 pb-4 space-y-2">
+                            {navItems.map((item) => (
+                                <NavLink
+                                    key={item.label}
+                                    to={item.path}
+                                    onClick={() => setIsOpen(false)}
+                                    className={({ isActive }) =>
+                                        `block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                                        isActive ? 'bg-teal-50 text-primary' : 'text-gray-700 hover:bg-gray-50'
+                                        }`
+                                    }
+                                >
+                                    {item.label}
+                                </NavLink>
+                            ))}
+                            <Link
+                                to="/login"
+                                onClick={() => setIsOpen(false)}
+                                className="mt-2 text-center bg-primary hover:opacity-90 text-white px-4 py-2.5 rounded-md text-base font-medium"
+                            >
+                                Login
+                            </Link>
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </header>
+    );
 }
-
 
 export default Navbar;

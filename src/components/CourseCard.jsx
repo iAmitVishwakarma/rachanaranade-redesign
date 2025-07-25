@@ -21,7 +21,7 @@ const CourseCard = ({ course }) => {
             alt={course.title}
             className="w-full h-full  hover:scale-1.2  object-cover opacity-80 blur-[2px]  contrast-90 brightness-95"
           />
-          <h3 className=" absolute text-white hover:scale-1.2  text-2xl font-poppins font-bold ">
+          <h3 className=" absolute text-white text-shadow text-shadow-black hover:scale-1.2  text-2xl font-poppins font-bold ">
             {course.title}
           </h3>
         </div>
@@ -35,9 +35,9 @@ const CourseCard = ({ course }) => {
             <p className="flex items-center">
               <i className="text-yellow-400">
                 <Star fill="currentcolor" />
-              </i>{" "}
-              <span className="ml-1 text-sm font-medium">4.8</span>{" "}
-              <span className="ml-1 text-xs text-gray-500">(1,789)</span>
+              </i>
+              <span className="ml-1 text-sm font-medium">{course.rating}</span>
+              <span className="ml-1 text-xs text-gray-500">({course.rating_count})</span>
             </p>
           </div>
           <h3 className="text-xl font-bold text-darkText">{course.title}</h3>

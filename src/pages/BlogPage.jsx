@@ -13,7 +13,7 @@ const formatDate = (dateString) => {
 };
 
 // --- Reusable Blog Card Component ---
-const BlogCard = ({ post, authorName, isSearchResult = false }) => (
+export const BlogCard = ({ post, authorName, isSearchResult = false }) => (
     <motion.div
         whileHover={{ y: -8 }}
         className={`bg-white rounded-xl shadow-md overflow-hidden h-full flex flex-col ${isSearchResult ? 'sm:flex-row' : ''}`}

@@ -18,7 +18,7 @@ export default function FeaturedCourses() {
                     <p className="text-base font-inter text-lightText mt-2">Dive into a Life-Changing Journey to Financial Mastery Alongside Thousands of Aspiring Learners!</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {courses.slice(2,5).map((course, index) => (
+                    {courses.slice(1,5).map((course, index) => (
                         <motion.div
                             key={course.id}
                             initial={{ opacity: 0, y: 40 }}

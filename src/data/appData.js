@@ -1,11 +1,10 @@
-import RachanaRanade from '../assets/images/rachana-portrait.png';
 
 export const instructors = [
     {
       "id": "INST001",
       "name": "CA Rachana Ranade",
       "credentials": "Chartered Accountant, Educator",
-      "profile_image": RachanaRanade,
+      "profile_image": "/Images/rachana-portrait.webp",
      
       "bio": "A Chartered Accountant by profession and a teacher by passion, Rachana Ranade has been on a mission to make financial education accessible to everyone in the simplest language possible.",
       "social_links": {
@@ -18,7 +17,7 @@ export const instructors = [
       "id": "INST002",
       "name": "Amit Sharma",
       "credentials": "SEBI Registered Investment Advisor",
-      "profile_image": "/images/instructors/amit-sharma.jpg",
+      "profile_image": "data:image/jpeg;base64,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",
       "bio": "Amit is a seasoned market expert with over 15 years of experience in technical analysis and derivatives trading. He specializes in creating actionable trading strategies.",
       "social_links": {
         "twitter": "https://twitter.com/amitsharmafinance"
@@ -27,120 +26,63 @@ export const instructors = [
   ];
 
 export const courses = [
-    {
-      "id": "CRS001",
-      "slug": "basics-of-stock-market",
-      "title": "Basics of Stock Market",
-      "price": 5499,
-      "original_price": 7999,
-      "instructor_id": "INST001",
-      "category": "Beginner",
-      "platform": "Android & iOS",
-      "duration_in_hours": 15,
-      "enrollment_count": 45876,
-      "rating": 4.8,
-      "rating_count": 945,
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYn8nC34qobq0ZirySTB_cJlqpI_npAlwZA&s",
-      "what_you_will_learn": [
-        "Understand how the stock market works.",
-        "Learn key terminologies like Sensex, Nifty, Bull, and Bear.",
-        "How to open a Demat & Trading account.",
-        "Place your first buy and sell orders with confidence."
-      ],
-      "description": "This course provides a solid foundation for beginners to navigate the Indian stock market. With interactive lessons and practical examples, you'll gain the confidence to start investing.",
-      "last_updated": "2025-07-20T18:00:00Z"
-    },
-    {
-      "id": "CRS002",
-      "slug": "mastering-money-management",
-      "title": "Mastering Money Management",
-      "price": 2299,
-      "original_price": 2499,
-      "instructor_id": "INST001",
-      "category": "Beginner",
-      "platform": "All Platforms",
-      "duration_in_hours": 8,
-      "enrollment_count": 18432,
-      "rating": 4.9,
-      "rating_count": 412,
-      "image": "https://www.creditassociates.com/wp-content/uploads/2024/06/240620_Blog_8_MoneyManagement-min.jpg",
-      "what_you_will_learn": [
-        "Create a personal budget that works.",
-        "Implement powerful savings and debt-reduction strategies.",
-        "Understand your financial health and set achievable goals."
-      ],
-      "description": "A concise yet powerful course designed to help you take control of your finances with practical tools and strategies for everyday money management.",
-      "last_updated": "2025-07-10T09:00:00Z"
-    },
-    {
-      "id": "CRS003",
-      "slug": "magic-of-mutual-funds",
-      "title": "Magic of Mutual Funds",
-      "price": 4799,
-      "original_price": 5299,
-      "instructor_id": "INST001",
-      "category": "Beginner",
-      "platform": "Android & iOS",
-      "duration_in_hours": 10,
-      "enrollment_count": 21543,
-      "rating": 4.8,
-      "rating_count": 342,
-      "image": "https://www.integratedindia.in/assets/img/blog/mutual-fund.jpg",
-      "what_you_will_learn": [
-        "Understand the fundamentals of mutual funds.",
-        "Learn to select the right fund for your goals.",
-        "Master the art of building a diversified portfolio."
-      ],
-      "description": "Dive into the world of mutual funds with this beginner-friendly course, offering insights into building a robust investment portfolio.",
-      "last_updated": "2025-07-15T12:00:00Z"
-    },
-    {
-      "id": "CRS004",
-      "slug": "fundamental-analysis",
-      "title": "Fundamental Analysis",
-      "price": 9999,
-      "original_price": 14999,
-      "instructor_id": "INST001",
-      "category": "Intermediate",
-      "platform": "Windows PC & MacOS",
-      "duration_in_hours": 20,
-      "enrollment_count": 15234,
-      "rating": 5.0,
-      "rating_count": 510,
-      "image": "https://cdn.britannica.com/72/235772-050-843A47E1/Magnifying-glass-on-charts-graphs-spreadsheet-paper.jpg",
-      "what_you_will_learn": [
-        "Read financial statements like a professional.",
-        "Calculate and interpret key financial ratios.",
-        "Perform industry and economic analysis.",
-        "Value a company to find its intrinsic worth."
-      ],
-      "description": "Elevate your investment skills with this intermediate course on fundamental analysis, focusing on in-depth financial evaluation techniques.",
-      "last_updated": "2025-06-25T10:00:00Z"
-    },
-    {
-      "id": "CRS005",
-      "slug": "technical-analysis",
-      "title": "Technical Analysis",
-      "price": 8999,
-      "original_price": 13499,
-      "instructor_id": "INST002",
-      "category": "Intermediate",
-      "platform": "All Platforms",
-      "duration_in_hours": 18,
-      "enrollment_count": 17890,
-      "rating": 4.9,
-      "rating_count": 480,
-      "image": "https://cdn.britannica.com/51/235551-050-C1E1D074/Market-Analyze-with-Digital-Monitor-focus-on-tip-of-finger.jpg",
-      "what_you_will_learn": [
-        "Master candlestick patterns and chart reading.",
-        "Use technical indicators like RSI, MACD, and Moving Averages.",
-        "Identify trends, support, and resistance levels.",
-        "Develop your own trading strategies."
-      ],
-      "description": "Unlock the secrets of chart reading and technical indicators with this comprehensive course tailored for intermediate traders.",
-      "last_updated": "2025-07-01T11:00:00Z"
-    },
-    {
+  {
+    "id": "CRS001",
+    "slug": "basics-of-stock-market",
+    "title": "Basics of Stock Market",
+    "price": 5499,
+    "original_price": 7999,
+    "instructor_id": "INST001",
+    "category": "Beginner",
+    "platform": "Android & iOS",
+    "duration_in_hours": 15,
+    "enrollment_count": 45876,
+    "rating": 4.8,
+    "rating_count": 945,
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDYn8nC34qobq0ZirySTB_cJlqpI_npAlwZA&s",
+    "what_you_will_learn": [
+      "Understand how the stock market works.",
+      "Learn key terminologies like Sensex, Nifty, Bull, and Bear.",
+      "How to open a Demat & Trading account.",
+      "Place your first buy and sell orders with confidence."
+    ],
+    "description": "This course provides a solid foundation for beginners to navigate the Indian stock market. With interactive lessons and practical examples, you'll gain the confidence to start investing.",
+    "content": [
+      { "module": "Introduction", "lectures": ["Welcome to the Course", "Why Invest in the Stock Market?", "Common Myths Busted"] },
+      { "module": "The Basics", "lectures": ["What is a Stock?", "Understanding Sensex & Nifty", "Bull vs. Bear Markets"] },
+      { "module": "Getting Started", "lectures": ["Opening a Demat Account", "Understanding Brokerage", "Placing Your First Trade"] }
+    ],
+    "last_updated": "2025-07-20T18:00:00Z"
+  },
+  {
+    "id": "CRS004",
+    "slug": "fundamental-analysis",
+    "title": "Fundamental Analysis",
+    "price": 9999,
+    "original_price": 14999,
+    "instructor_id": "INST001",
+    "category": "Intermediate",
+    "platform": "Windows PC & MacOS",
+    "duration_in_hours": 20,
+    "enrollment_count": 15234,
+    "rating": 5.0,
+    "rating_count": 510,
+    "image": "https://cdn.britannica.com/72/235772-050-843A47E1/Magnifying-glass-on-charts-graphs-spreadsheet-paper.jpg",
+    "what_you_will_learn": [
+      "Read financial statements like a professional.",
+      "Calculate and interpret key financial ratios.",
+      "Perform industry and economic analysis.",
+      "Value a company to find its intrinsic worth."
+    ],
+    "description": "Elevate your investment skills with this intermediate course on fundamental analysis, focusing on in-depth financial evaluation techniques.",
+    "content": [
+      { "module": "Financial Statements", "lectures": ["Decoding the Balance Sheet", "Understanding the P&L Statement", "Analyzing Cash Flow"] },
+      { "module": "Ratio Analysis", "lectures": ["Profitability Ratios (ROE, ROA)", "Valuation Ratios (P/E, P/B)", "Leverage Ratios (D/E)"] },
+      { "module": "Valuation Models", "lectures": ["Discounted Cash Flow (DCF)", "Relative Valuation", "Building Your First Model"] }
+    ],
+    "last_updated": "2025-06-25T10:00:00Z"
+  },
+  {
       "id": "CRS006",
       "slug": "futures-and-options",
       "title": "Futures and Options",
@@ -161,6 +103,11 @@ export const courses = [
         "Manage risk in F&O trading."
       ],
       "description": "An advanced course for mastering futures and options, equipping you with strategies to thrive in the derivatives market.",
+      "content": [
+          { "module": "Derivatives Explained", "lectures": ["What are Futures?", "What are Options?", "Key Terminology"] },
+          { "module": "Option Greeks", "lectures": ["Understanding Delta & Gamma", "The Role of Theta & Vega", "Practical Application"] },
+          { "module": "Trading Strategies", "lectures": ["Bull Call Spread", "Bear Put Spread", "Iron Condor Explained"] }
+      ],
       "last_updated": "2025-05-30T15:00:00Z"
     },
     {
@@ -196,7 +143,7 @@ export const blogs = [
       "date": "2025-07-15T00:00:00Z",
       "author_id": "INST002",
       "excerpt": "Learn how to spot one of the most reliable bullish reversal patterns in technical analysis and how to trade it effectively.",
-      "image": "/images/blogs/inverse-head-shoulders.jpg",
+      "image": "https://alchemymarkets.com/wp-content/uploads/2024/09/image.jpeg",
       "tags": ["Technical Analysis", "Chart Patterns", "Trading"],
       "reading_time_in_minutes": 5,
       "is_featured": true,
@@ -216,7 +163,7 @@ export const blogs = [
       "date": "2025-07-18T00:00:00Z",
       "author_id": "INST001",
       "excerpt": "Your biggest enemy in the stock market is often yourself. Learn how to control fear and greed to make rational investment decisions.",
-      "image": "/images/blogs/investing-psychology.jpg",
+      "image": "https://admin.greenportfolio.co/getFile/81241612818912750.jpg",
       "tags": ["Investing", "Behavioral Finance"],
       "reading_time_in_minutes": 7,
       "is_featured": false,
@@ -231,7 +178,7 @@ export const blogs = [
       "date": "2025-07-10T11:30:00Z",
       "author_id": "INST001",
       "excerpt": "We break down the pros and cons of Systematic Investment Plans (SIPs) versus lumpsum investments to help you decide.",
-      "image": "/images/blogs/sip-vs-lumpsum.jpg",
+      "image": "https://www.etmoney.com/learn/wp-content/uploads/2023/03/Artboard-2.png",
       "tags": ["Investing", "Mutual Funds", "Beginner"],
       "reading_time_in_minutes": 6,
       "is_featured": false,
@@ -249,7 +196,7 @@ export const blogs = [
       "date": "2025-06-25T14:00:00Z",
       "author_id": "INST001",
       "excerpt": "An emergency fund is your financial safety net. Learn how much you need, where to keep it, and why it's non-negotiable.",
-      "image": "/images/blogs/emergency-fund.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsdxgWFJprsRwOl9lO9IwoQb6kKJOEK_ymFQ&shttps://cdn.prod.website-files.com/67ff5470e6b081baa0f5cd0f/680a724b83d54285ff90777d_The-Importance-of-Emergency-Funds-in-Your-Financial-Freedom-Journey.jpeg",
       "tags": ["Personal Finance", "Financial Planning"],
       "reading_time_in_minutes": 5,
       "is_featured": false,

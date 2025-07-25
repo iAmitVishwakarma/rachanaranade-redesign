@@ -1,123 +1,81 @@
-<!-- # React + Vite
+# Rachana Ranade - Website Redesign (Hackathon Edition)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
+![Zustand](https://img.shields.io/badge/Zustand-B47427?style=for-the-badge&logo=zustand&logoColor=white)
 
-Currently, two official plugins are available:
+A modern, fully responsive, and animated redesign of the CA Rachana Ranade website, built for a hackathon. This project transforms a static educational platform into a dynamic and engaging user experience, focusing on clean UI, smooth animations, and a component-based architecture.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+- **Modern & Responsive Design:** The UI is crafted to be pixel-perfect and fully responsive across all devices, from mobile phones to large desktops.
+- **Engaging Animations:** Subtle and meaningful animations using **Framer Motion** provide a fluid and interactive user experience.
+- **Component-Based Architecture:** Built with reusable React components for scalability and easy maintenance.
+- **State Management with Zustand:** Minimal and efficient state management for courses, testimonials, and other shared data.
+- **Functional Authentication:** A complete login/signup flow with persistent state using **Local Storage**.
+- **Dynamic Content:** Pages like Course Details and Blog posts are dynamically rendered based on data from a central store.
+- **Interactive Components:** Includes a video popup modal, animated timelines, and testimonial sliders.
+- **Clean Codebase:** Follows modern React best practices with a clear and organized file structure.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
 
- -->
+To get a local copy up and running, follow these simple steps.
 
-// ✅ Full folder & file structure starter for Rachana Ranade Hackathon project using React + Vite + Tailwind
+### Prerequisites
 
-// Step 0: Create Project (you run this in terminal)
-// npx create-vite@latest rachana-ranade-website --template react
-// cd rachana-ranade-website
-// npm install -D tailwindcss postcss autoprefixer
-// npx tailwindcss init -p
+- Node.js (v18 or higher)
+- npm or yarn
 
+### Installation & Setup
 
-📁 rachana-ranade-website/
-├── public/
-│   └── index.html
-├── src/
-│   ├── assets/                            # All images, logos, icons
-│   │   ├── images/
-│   │   ├── icons/
-│   │   ├── videos/
-│   │   └── logos/
-│   ├── components/                        # Reusable UI Components
-│   │   ├── Navbar.jsx
-│   │   ├── Footer.jsx
-│   │   ├── CourseCard.jsx
-│   │   ├── TestimonialSlider.jsx
-│   │   ├── CalculatorCard.jsx
-│   │   ├── BlogCard.jsx
-│   │   └── Button.jsx
-│   ├── constants/                         # Static data like courseList, testimonials
-│   │   ├── courses.js
-│   │   ├── testimonials.js
-│   │   ├── calculators.js
-│   │   └── blogs.js
-│   ├── layouts/                           # Common layout wrappers
-│   │   └── MainLayout.jsx
-│   ├── pages/                             # Route-level views
-│   │   ├── Home.jsx
-│   │   ├── Courses.jsx
-│   │   ├── Membership.jsx
-│   │   ├── CourseDetail.jsx
-│   │   ├── FinancialCalculators.jsx
-│   │   ├── Blog.jsx
-│   │   ├── About.jsx
-│   │   └── Login.jsx
-│   ├── routes/                            # Centralized routing
-│   │   └── AppRoutes.jsx
-│   ├── styles/                            # Tailwind or custom global CSS
-│   │   └── index.css
-│   ├── App.jsx                            # Main entry component
-│   ├── main.jsx                           # ReactDOM root render
-│   └── tailwind.config.js                 # Tailwind configuration
-├── .gitignore
-├── package.json
-├── postcss.config.js
-├── README.md
-└── vite.config.js
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/iamitvishwakarma/rachanaranade-redesign.git](https://github.com/iamitvishwakarma/rachanaranade-redesign.git)
+    ```
+2.  **Navigate to the project directory:**
+    ```sh
+    cd rachanaranade-redesign
+    ```
+3.  **Install NPM packages:**
+    ```sh
+    npm install
+    ```
+4.  **Run the development server:**
+    ```sh
+    npm run dev
+    ```
+    The application will be available at `http://localhost:5173`.
 
-<!-- 
-// ✅ src/main.jsx
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import './styles/index.css';
+## 📁 File Structure
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+The project follows a clean and organized structure to separate concerns and improve maintainability.
 
+```
+src/
+├── assets/             # Images, logos, and other static assets
+├── components/         # Reusable components used across the app
+│   ├── home/           # Components specific to the Homepage
+│   ├── course/         # Components for the Course Detail page
+│   └── calculator/     # Components for the Calculator pages
+├── data/               # Centralized data stores (JS files)
+├── detailPage/         # Page components for detailed views (e.g., Blog, Course)
+├── layouts/            # Main layout wrappers (e.g., Navbar, Footer)
+├── pages/              # Top-level page components
+├── stores/             # Zustand state management stores
+├── App.jsx             # Main application component with routing setup
+└── main.jsx            # Entry point of the React application
 
-// ✅ src/App.jsx
-import React from 'react';
-import AppRoutes from './routes/AppRoutes';
-import MainLayout from './layouts/MainLayout';
+```
 
-export default function App() {
-  return (
-    <MainLayout>
-      <AppRoutes />
-    </MainLayout>
-  );
-}
+## 🛠️ Technologies Used
 
+- **Frontend:** React.js, Vite
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion, GSAP (for counters)
+- **State Management:** Zustand
+- **Routing:** React Router DOM
+- **Icons:** Lucide React
 
-// ✅ src/routes/AppRoutes.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from '../pages/Home';
-import Courses from '../pages/Courses';
-import Membership from '../pages/Membership';
-import FinancialCalculators from '../pages/FinancialCalculators';
-import Blog from '../pages/Blog';
-import About from '../pages/About';
-import Login from '../pages/Login';
-
-export default function AppRoutes() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/courses" element={<Courses />} />
-        <Route path="/membership" element={<Membership />} />
-        <Route path="/calculators" element={<FinancialCalculators />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
-      </Routes>
-    </Router>
-  );
-} -->
+---
