@@ -7,10 +7,7 @@ import { ArrowRight } from 'lucide-react';
 
 
 export default function FeaturedCourses() {
- const { courses, loading, error } = useCourseStore();
-
-  if (loading) return <div className="text-center py-16">Loading courses...</div>;
-  if (error) return <div className="text-center py-16 text-red-500">Error: {error}</div>;
+ const { courses } = useCourseStore();
 
 
   return (
@@ -18,7 +15,7 @@ export default function FeaturedCourses() {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-extrabold text-darkText">Most Popular Courses</h2>
-                    <p className="text-lg text-lightText mt-2">Join thousands of learners on their journey to financial literacy.</p>
+                    <p className="text-base font-inter text-lightText mt-2">Dive into a Life-Changing Journey to Financial Mastery Alongside Thousands of Aspiring Learners!</p>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {courses.slice(2,5).map((course, index) => (

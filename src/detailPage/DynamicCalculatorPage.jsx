@@ -8,7 +8,7 @@ import CalculatorWrapper, {
     CalculatorInputSection, 
     CalculatorResultSection, 
     CalculatorInput 
-} from '../components/CalculatorWrapper';
+} from '../components/calculator/CalculatorWrapper';
 
 // Import all necessary icons
 import { TrendingUp, PiggyBank, Landmark, Banknote, Percent } from 'lucide-react';

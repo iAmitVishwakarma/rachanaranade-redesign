@@ -25,7 +25,7 @@ const TestimonialCard = ({ testimonial , bg }) => {
 
     return (
         <div className={" p-7 m-2 rounded-2xl shadow-lg h-full flex flex-col justify-center items-center text-center " + bg}>
-            <img src={testimonial.profile_image} alt={testimonial.name} className="w-20 h-20 mx-auto rounded-full object-cover mb-5 shadow-md" />
+            <img src={testimonial.profile_image+"u"+testimonial.id} alt={testimonial.name} className="w-20 h-20 mx-auto rounded-full object-cover mb-5 shadow-md" />
             <div className="mb-4">{renderStars(testimonial.rating)}</div>
             <p className="text-gray-700 italic text-base leading-relaxed mb-6 flex-grow"><b className='text-2xl font-bold tracking-wider'>“</b>{testimonial.quote}”</p>
             <div>

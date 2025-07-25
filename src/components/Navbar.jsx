@@ -57,7 +57,7 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header className="sticky top-0 z-50 backdrop-blur-2xl bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-1 py-5 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold text-teal-600">

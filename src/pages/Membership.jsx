@@ -101,29 +101,7 @@ const MembershipPage = () => {
             </section>
 
             {/* 3. Pricing Table */}
-            <section className="bg-white py-20 px-4">
-                 <div className="max-w-6xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-darkText mb-4">Choose Your Plan</h2>
-                    <p className="text-lightText mb-12">Start learning with a plan that fits your needs.</p>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        {pricingPlans.map(plan => (
-                            <div key={plan.name} className={`border-2 rounded-2xl p-8 text-left flex flex-col ${plan.popular ? 'border-teal-500 shadow-2xl relative' : 'border-gray-200'}`}>
-                                {plan.popular && <span className="absolute top-0 -translate-y-1/2 bg-teal-500 text-white text-xs font-bold px-3 py-1 rounded-full left-1/2 -translate-x-1/2">MOST POPULAR</span>}
-                                <h3 className="text-2xl font-bold">{plan.name}</h3>
-                                <p className="mt-4"><span className="text-4xl font-extrabold">{plan.price}</span><span className="text-lightText">{plan.period}</span></p>
-                                <ul className="mt-8 space-y-4 text-gray-600 flex-grow">
-                                    {plan.features.map(feature => (
-                                        <li key={feature} className="flex items-center"><CheckCircle className="text-green-500 mr-3" size={20} /><span>{feature}</span></li>
-                                    ))}
-                                </ul>
-                                <button className={`w-full mt-10 py-3 rounded-lg font-semibold ${plan.popular ? 'bg-teal-600 text-white hover:bg-teal-700' : 'bg-gray-200 text-gray-800 hover:bg-gray-300'}`}>
-                                    Choose Plan
-                                </button>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            
 
             {/* 4. Testimonials */}
             <TestimonialSlider />

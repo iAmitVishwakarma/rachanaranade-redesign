@@ -47,6 +47,7 @@ export const courses = [
         "How to open a Demat & Trading account.",
         "Place your first buy and sell orders with confidence."
       ],
+      "description": "This course provides a solid foundation for beginners to navigate the Indian stock market. With interactive lessons and practical examples, you'll gain the confidence to start investing.",
       "last_updated": "2025-07-20T18:00:00Z"
     },
     {
@@ -68,6 +69,7 @@ export const courses = [
         "Implement powerful savings and debt-reduction strategies.",
         "Understand your financial health and set achievable goals."
       ],
+      "description": "A concise yet powerful course designed to help you take control of your finances with practical tools and strategies for everyday money management.",
       "last_updated": "2025-07-10T09:00:00Z"
     },
     {
@@ -89,6 +91,7 @@ export const courses = [
         "Learn to select the right fund for your goals.",
         "Master the art of building a diversified portfolio."
       ],
+      "description": "Dive into the world of mutual funds with this beginner-friendly course, offering insights into building a robust investment portfolio.",
       "last_updated": "2025-07-15T12:00:00Z"
     },
     {
@@ -111,6 +114,7 @@ export const courses = [
         "Perform industry and economic analysis.",
         "Value a company to find its intrinsic worth."
       ],
+      "description": "Elevate your investment skills with this intermediate course on fundamental analysis, focusing on in-depth financial evaluation techniques.",
       "last_updated": "2025-06-25T10:00:00Z"
     },
     {
@@ -133,6 +137,7 @@ export const courses = [
         "Identify trends, support, and resistance levels.",
         "Develop your own trading strategies."
       ],
+      "description": "Unlock the secrets of chart reading and technical indicators with this comprehensive course tailored for intermediate traders.",
       "last_updated": "2025-07-01T11:00:00Z"
     },
     {
@@ -155,6 +160,7 @@ export const courses = [
         "Implement various options strategies like straddles and spreads.",
         "Manage risk in F&O trading."
       ],
+      "description": "An advanced course for mastering futures and options, equipping you with strategies to thrive in the derivatives market.",
       "last_updated": "2025-05-30T15:00:00Z"
     },
     {
@@ -177,65 +183,9 @@ export const courses = [
         "Build a long-term portfolio based on value.",
         "Understand the concept of 'Margin of Safety'."
       ],
+      "description": "Explore the timeless strategies of value investing with this advanced course, inspired by the techniques of legendary investors.",
       "last_updated": "2025-06-10T14:00:00Z"
-    },
-    // {
-    //   "id": "CRS008",
-    //   "slug": "pro-investor-marathi",
-    //   "title": "Pro Investor Membership (Marathi)",
-    //   "price": 4000,
-    //   "original_price": 4500,
-    //   "instructor_id": "INST001",
-    //   "category": "Regional",
-    //   "platform": "All Platforms",
-    //   "duration_in_hours": 20,
-    //   "enrollment_count": 5678,
-    //   "rating": 5.0,
-    //   "rating_count": 150,
-    //   "image": "/images/courses/pro-investor-marathi.jpg",
-    //   "what_you_will_learn": [
-    //     "Deep dive into stock market analysis in Marathi.",
-    //     "Weekly market analysis sessions.",
-    //     "Exclusive access to a Marathi-speaking community."
-    //   ],
-    //   "last_updated": "2025-07-18T10:00:00Z"
-    // },
-    // {
-    //   "id": "CRS009",
-    //   "slug": "beginner-combo-pack",
-    //   "title": "Beginner's Combo Pack",
-    //   "price": 11599,
-    //   "original_price": 15797,
-    //   "instructor_id": "INST001",
-    //   "category": "Bundles",
-    //   "platform": "Android & iOS",
-    //   "is_bundle": true,
-    //   "bundle_count": 3,
-    //   "courses_included": ["CRS001", "CRS002", "CRS003"],
-    //   "image": "/images/courses/bundle-beginner.jpg",
-    //   "what_you_will_learn": [
-    //     "A complete foundation in personal finance, mutual funds, and the stock market."
-    //   ],
-    //   "last_updated": "2025-07-21T10:00:00Z"
-    // },
-    // {
-    //   "id": "CRS010",
-    //   "slug": "analysis-pro-pack",
-    //   "title": "Analysis Pro Pack",
-    //   "price": 18499,
-    //   "original_price": 28499,
-    //   "instructor_id": "INST001",
-    //   "category": "Bundles",
-    //   "platform": "All Platforms",
-    //   "is_bundle": true,
-    //   "bundle_count": 2,
-    //   "courses_included": ["CRS004", "CRS005"],
-    //   "image": "/images/courses/bundle-analysis.jpg",
-    //   "what_you_will_learn": [
-    //     "Master both fundamental and technical analysis to become a well-rounded investor."
-    //   ],
-    //   "last_updated": "2025-07-21T10:00:00Z"
-    // }
+    }
   ];
   
 export const blogs = [
@@ -364,7 +314,7 @@ export const testimonials = [
       "name": "Aarav Sharma",
       "course_id": "CRS003",
       "quote": "Rachana ma'am simplifies the most complex topics. I finally feel confident about my investments. The live Q&A sessions are a game-changer!",
-      "profile_image": "/images/avatars/aarav.jpg",
+      "profile_image": "https://i.pravatar.cc/150?",
       "rating": 5,
       "is_verified": true
     },
@@ -373,7 +323,7 @@ export const testimonials = [
       "name": "Priya Singh",
       "course_id": "CRS001",
       "quote": "The community support is amazing. Being able to ask questions and learn with others has been a game-changer for me. Best decision I ever made!",
-      "profile_image": "/images/avatars/priya.jpg",
+      "profile_image": "https://i.pravatar.cc/150?",
       "rating": 5,
       "is_verified": true
     },
@@ -382,7 +332,7 @@ export const testimonials = [
       "name": "Rohan Mehta",
       "course_id": "CRS005",
       "quote": "I thought I knew enough about finance, but the membership content opened my eyes to so much more. The downloadable notes are pure gold. Worth every penny!",
-      "profile_image": "/images/avatars/rohan.jpg",
+      "profile_image": "https://i.pravatar.cc/150?",
       "rating": 5,
       "is_verified": true
     },
@@ -391,7 +341,7 @@ export const testimonials = [
       "name": "Sneha Gupta",
       "course_id": "CRS002",
       "quote": "As a working professional, the flexible learning schedule is perfect. I can learn anytime, anywhere. The content is practical and easy to apply.",
-      "profile_image": "/images/avatars/sneha.jpg",
+      "profile_image": "https://i.pravatar.cc/150?",
       "rating": 4,
       "is_verified": true
     },
@@ -400,54 +350,67 @@ export const testimonials = [
       "name": "Vikram Rathod",
       "course_id": "CRS006",
       "quote": "The Futures and Options course is intense but incredibly rewarding. The strategies taught are practical and have improved my trading results.",
-      "profile_image": "/images/avatars/vikram.jpg",
+      "profile_image": "https://i.pravatar.cc/150?",
       "rating": 5,
       "is_verified": true
     }
   ];
 
 export const membership_plans =[
-    {
-      "id": "plan-monthly",
-      "name": "Monthly",
-      "price": 999,
-      "period": "month",
-      "tagline": "Perfect for getting started.",
-      "features": [
-        "Access to all courses",
-        "Community support",
-        "Email support"
-      ],
-      "popular": false
-    },
-    {
-      "id": "plan-yearly",
-      "name": "Yearly",
-      "price": 9999,
-      "period": "year",
-      "tagline": "Best value for dedicated learners.",
-      "features": [
-        "Access to all courses",
-        "Community support",
-        "Live monthly webinars",
-        "Downloadable notes",
-        "Priority support"
-      ],
-      "popular": true
-    },
-    {
-      "id": "plan-lifetime",
-      "name": "Lifetime",
-      "price": 24999,
-      "period": "one-time",
-      "tagline": "Pay once, learn forever.",
-      "features": [
-        "All Yearly plan benefits",
-        "Lifetime access & updates",
-        "Exclusive workshops"
-      ],
-      "popular": false
-    }
+   {
+    "id": "plan-basic",
+    "name": "Basic",
+    "price": 499,
+    "period": "month",
+    "tagline": "Perfect for Exploring Fundamentals",
+    "features": [
+      "Access to all free courses",
+      "Monthly insightful newsletter",
+      "Community forum access",
+    ],
+    "notInclude" :[
+ "Live Q&A sessions",
+ "Premium courses"
+    ],
+    "popular": false,
+    "callToAction": "Get Started"
+  },
+  {
+    "id": "plan-pro",
+    "name": "Pro",
+    "price": 999,
+    "period": "month",
+    "tagline": "Ideal for Dedicated Investors",
+    "features": [
+      "All Basic features",
+      "Access to premium courses",
+      "Monthly live Q&A sessions",
+      "Expert investment ideas & strategies",
+    
+    ], "notInclude" :[
+  "1-on-1 mentoring"
+    ],
+    "popular": true,
+    "callToAction": "Join Pro"
+  },
+  {
+    "id": "plan-elite",
+    "name": "Elite",
+    "price": 2499,
+    "period": "month",
+    "tagline": "Ultimate for Advanced Mastery",
+    "features": [
+      "All Pro features",
+      "Quarterly 1-on-1 mentoring",
+      "Personalized portfolio review & analysis",
+      "Weekly market insights",
+      "Early access to new courses"
+    ],
+    "notInclude" :[
+    ],
+    "popular": false,
+    "callToAction": "Join Elite"
+  }
   ];
 
 export const faqs = [

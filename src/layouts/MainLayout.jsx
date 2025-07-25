@@ -13,12 +13,12 @@ import MembershipPage from "../pages/Membership";
 import CoursesPage from "../pages/CoursesPage";
 
 import Auth from "../pages/Auth";
-import CourseDetailPage from "../pages/CourseDetailPage";
+import CourseDetailPage from "../detailPage/CourseDetailPage";
 import BlogPage from "../pages/BlogPage";
-import BlogDetailPage from "../pages/BlogDetailPage";
+import BlogDetailPage from "../detailPage/BlogDetailPage";
 import FinancialCalculators from "../pages/FinancialCalculators";
 import AboutPage from "../pages/AboutPage";
-import DynamicCalculatorPage from "../pages/DynamicCalculatorPage";
+import DynamicCalculatorPage from "../detailPage/DynamicCalculatorPage";
 
 
 

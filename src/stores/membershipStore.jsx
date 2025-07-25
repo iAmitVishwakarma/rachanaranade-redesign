@@ -1,7 +1,8 @@
 import { create } from 'zustand';
+import { membership_plans } from '../data/appData';
 
-const useMembershipStore = create((set) => ({
+const useMembershipPlanStore = create((set) => ({
   plans: membership_plans,
 }));
 
-export default useMembershipStore;
+export default useMembershipPlanStore;
