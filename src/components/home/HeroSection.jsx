@@ -65,7 +65,7 @@ export default function HeroSection() {
             </div>
               <div className="flex flex-wrap gap-6 sm:gap-8 justify-center lg:justify-start">
               {stats.map((stat, index) => (
-                <div key={index} className="flex items-center gap-3 shadow px-4 py-2rounded">
+                <div key={index} className="flex items-center gap-3 shadow bg-white  px-4 py-2 rounded">
                   <stat.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary" />
                   <div>
                     <p className="font-bold text-lg sm:text-xl text-darkText">{stat.value}</p>

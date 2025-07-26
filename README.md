@@ -8,6 +8,11 @@
 
 A modern, fully responsive, and animated redesign of the CA Rachana Ranade website, built for a hackathon. This project transforms a static educational platform into a dynamic and engaging user experience, focusing on clean UI, smooth animations, and a component-based architecture.
 
+
+
+
+
+
 ## ✨ Key Features
 
 - **Modern & Responsive Design:** The UI is crafted to be pixel-perfect and fully responsive across all devices, from mobile phones to large desktops.

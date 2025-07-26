@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle, Zap, Users, Tv, Download, Plus, Minus } from 'lucide-react';
 import TestimonialSlider from '../components/TestimonialSlider'; // Re-using your existing component
+import MembershipPrice from '../components/MembershipPrice';
 
 // --- Reusable FAQ Item Component ---
 const FAQItem = ({ question, answer }) => {
@@ -67,12 +68,13 @@ const MembershipPage = () => {
                 >
                     Join our exclusive membership to get unlimited access to all courses, live sessions, and a supportive community of learners.
                 </motion.p>
-                <motion.button 
+                {/* <motion.button 
                     className="bg-teal-600 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-teal-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
                     initial={{ opacity: 0, scale: 0.8 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.5, delay: 0.4 }}
+                
                 >
                     Join Now
-                </motion.button>
+                </motion.button> */}
             </section>
 
             {/* 2. Membership Benefits */}
@@ -101,7 +103,7 @@ const MembershipPage = () => {
             </section>
 
             {/* 3. Pricing Table */}
-            
+            <MembershipPrice />
 
             {/* 4. Testimonials */}
             <TestimonialSlider />
